@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<Html>  
+<head>   
+<title>  
+Registration Page  
+</title>  
+<style>
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font: 20px;
+  }
+  button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+</style>
+</head>  
+<body bgcolor="Lightskyblue">  
+<br>  
+<br>  
+<h2> Registration page </h2>
+
+<form>  
+  
+<label> Employee ID: </label>         
+<input type="text" name="ID" size="15" required/> <br> <br>  
+<label>Employee Name: </label>     
+<input type="text" name="name" size="15" autocomplete="off" /> <br> <br>  
+<label>   
+Phone :  
+</label>  
+<input type="tel" name="country code"  value="+91" size="2"/>   
+<input type="tel" name="phone" size="10" /> <br> <br> 
+<label> Email: </label>         
+<input type="email" placeholder="email@example.com" id="email" name="email" size="15" autocomplete="off" /> <br> <br>  
+
+<label> Technology: </label>         
+<input type="text" name="Technology" size="15"/> <br> <br>  
+
+<label>   
+Course :  
+</label>   
+<select>
+<option value="Course">Course</option>  
+<option value="BCA">BCA</option>  
+<option value="BBA">BBA</option>  
+<option value="B.Tech">B.Tech</option>  
+<option value="MBA">MBA</option>  
+<option value="MCA">MCA</option>  
+<option value="M.Tech">M.Tech</option>  
+</select> 
+<br> <br>
+<label>
+Preferred dates:
+</label>
+<label for="start">Start date:</label>
+
+<input type="date" id="start" name="trip-start"
+       value="2021-10-01"
+       min="2021-01-01" max="2021-12-31">
+	   <label for="start">End date:</label>
+
+<input type="date" id="end" name="trip-end"
+       value="2021-10-01"
+       min="2021-01-01" max="2021-12-31"><br> <br>
+
+
+
+   
+<label>   
+Other facilities :  
+</label> 
+<textarea rows="1" cols="10" name="Description"
+                            id="Description"></textarea>
+   <br>  
+<label>
+Virtual Lab:
+</label>
+<input type="text" name="Virtual lab"/> <br> <br>
+<label>
+Online quiz:
+</label>
+<input type="text" name="online quiz"/> <br> <br>
+
+<label>
+Online instructor(to clarify doubts):
+</label>
+<input type="text" name="online instructor"/> <br> <br>
+  
+  
+<label> 
+<input type="button" value="Submit"/> 
+
+<input type="reset" value="Reset"><br> <br> 
+</form>  
+</body>  
+</html>  

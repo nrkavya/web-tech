@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: 'rs';
+}
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: $font-default;
+  font-weight: 100;
+  }
+  label {
+  color: $color-label;
+}
+
+.shopping-cart {
+  margin-top: -45px;
+}
+column-labels {
+  label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $color-border;
+  }
+  
+  .product-image, .product-details {
+    text-indent: -9999px;
+  }
+}
+
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-border;
+  
+  .product-image {
+    text-align: center;
+    img {
+      width: 100px;
+    }
+  }
+  
+  .product-details {
+    .product-title {
+      margin-right: 20px;
+      font-family: $font-bold;
+    }
+    .product-description {
+      margin: 5px 20px 5px 0;
+      line-height: 1.4em;
+    }
+  }
+  
+  .product-quantity {
+    input {
+      width: 40px;
+      
+    }
+  }
+  @media screen and (max-width: 650px) {
+  
+  .Fruit-basket {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid $color-border;
+  }
+  
+  .column-labels {
+    display: none;
+  }
+  
+  .product-image {
+    float: right;
+    width: auto;
+    img {
+      margin: 0 0 10px 10px;
+    }
+  }
+  
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+  
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+  
+  .product-quantity {
+    width: 100px;
+    input {
+      margin-left: 20px;
+    }
+  }
+  
+  .product-quantity:before {
+    content: 'x';
+  }
+  
+  
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+  
+}
+
+
+</style>
+</head>
+<body>
+<h1>Fruit Basket</h1>
+
+<div class="Fruit-basket">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://post.healthline.com/wp-content/uploads/2020/09/health-benefits-of-apples-1200x628-facebook-1200x628.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Apple</div>
+      <p class="product-description">Fresh with low cost</p>
+    </div>
+    <div class="product-price">200/kg</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1" max="3">
+    </div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="https://images.news18.com/ibnlive/uploads/2021/08/1628223597_mangoes-1200x800.png">
+    </div>
+    <div class="product-details">
+      <div class="product-title">mango</div>
+      <p class="product-description">Fresh!!</p>
+    </div>
+    <div class="product-price">160/kg</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1" max="3">
+    </div>
+  </div>
+  
+  <div class="product">
+    <div class="product-image">
+      <img src="https://cdn1.sph.harvard.edu/wp-content/uploads/sites/30/2018/08/bananas-1354785_1920-1200x800.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">banana</div>
+      <p class="product-description">Fresh!!</p>
+    </div>
+    <div class="product-price">150/kg</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1" max="3">
+    </div>
+    
+  </div>
+  
+  <div class="product">
+    <div class="product-image">
+      <img src="https://cdn.mos.cms.futurecdn.net/QCRt2ButzyC6FJi8pb6hNi-480-80.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">watermelon</div>
+      <p class="product-description">Fresh!!</p>
+    </div>
+    <div class="product-price">100/kg</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1" max="3">
+    </div>
+    
+  </div>
+  
+  <div class="product">
+    <div class="product-image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Orange-Fruit-Pieces.jpg/1200px-Orange-Fruit-Pieces.jpg">
+    </div>
+    <div class="product-details">
+      <div class="product-title">orange</div>
+      <p class="product-description">Fresh!!</p>
+    </div>
+    <div class="product-price">200/kg</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1" max="3">
+    </div>
+    
+  </div>
+  
+  
+      <a href="fruitmart.html" alt="no img found">
+      <button class="checkout">Checkout</button>
+	  </a>
+
+</div>
+</body>
+</html>
